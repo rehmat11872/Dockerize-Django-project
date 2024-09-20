@@ -1,0 +1,12 @@
+docker ps
+docker ps -a
+docker stop <container_id_or_name>
+docker stop 6457e86c76cf  # Use the first few characters of the container ID
+docker images
+docker rm <container_id_or_name>
+docker rm 6457e86c76cf
+docker rmi <image_id>
+docker-compose build
+docker-compose up
+docker-compose run web python manage.py createsuperuser
+docker-compose exec web python manage.py migrate
